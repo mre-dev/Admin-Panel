@@ -96,15 +96,16 @@
             </div>
 
             <div class="secBody">
-                <div>
+
+                <div id="mainBox_todo">
                     <div class="secBodyHeader">
                         <h3>To do</h3>
-                        <span>2</span>
+                        <span id="counter_todo">2</span>
                     </div>
                     <div class="secBodyAdd">+</div>
-                    <div class="content">
+                    <div class="content" ondrop="drop(event)" ondragover="allowDrop(event)">
 
-                        <div class="todoBox">
+                        <div class="todoBox" draggable="true" ondragstart="drag(event)" id="todo1">
                             <div class="todoHeader">
                                 <div class="titleBox">
                                     <span class="dot">.</span>
@@ -126,7 +127,7 @@
                             </div>
                         </div>
 
-                        <div class="todoBox">
+                        <div class="todoBox" draggable="true" ondragstart="drag(event)" id="todo2">
                             <div class="todoHeader">
                                 <div class="titleBox">
                                     <span class="dot">.</span>
@@ -149,15 +150,16 @@
 
                     </div>
                 </div>
-                <div>
+
+                <div id="mainBox_progress">
                     <div class="secBodyHeader">
                         <h3>In progress</h3>
-                        <span>1</span>
+                        <span id="progress_todo">1</span>
                     </div>
                     <div class="secBodyAdd">+</div>
-                    <div class="content">
+                    <div class="content" ondrop="drop(event)" ondragover="allowDrop(event)">
 
-                        <div class="todoBox">
+                        <div class="todoBox" draggable="true" ondragstart="drag(event)" id="todo3">
                             <div class="todoHeader">
                                 <div class="titleBox">
                                     <span class="dot">.</span>
@@ -179,22 +181,20 @@
                             </div>
                         </div>
 
-                        
-
                     </div>
                 </div>
-                <div>
+
+                <div id="mainBox_completed">
                     <div class="secBodyHeader">
                         <h3>Completed</h3>
-                        <span>0</span>
+                        <span id="completed_todo">0</span>
                     </div>
                     <div class="secBodyAdd">+</div>
-                    <div class="content">
-
-                
+                    <div class="content" ondrop="drop(event)" ondragover="allowDrop(event)">
 
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -203,5 +203,6 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/move-box.js"></script>
 </body>
 </html>
