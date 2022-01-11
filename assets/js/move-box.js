@@ -9,6 +9,7 @@ function allowDrop(ev) {
 function drag(ev) {
     ev.dataTransfer.setData("MyTodo", ev.target.id);
     resetStyle(ev, "drag");
+    document.getElementById(ev.target.id).style.cursor = "-webkit-grabbing";
     calcContentItem();
 }
   
@@ -35,4 +36,7 @@ function resetStyle(target, status) {
     } else if(status == "drop") {
         document.getElementById(target).style.boxShadow = "0rem 0rem 0.5rem 0.2rem lightgrey";
     }
+    document.querySelectorAll(".todoBox").forEach(element => {
+        element.style.cursor = "-webkit-grab";
+    });
 }

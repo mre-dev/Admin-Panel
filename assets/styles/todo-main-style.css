@@ -100,7 +100,7 @@
     background-color: white;
     border-radius: 0.5rem;
     padding: 1rem;
-    cursor: pointer;
+    cursor: -webkit-grab;
     margin: 1rem 0.5rem;
     box-shadow: 0rem 0rem 0.5rem 0.2rem lightgrey;
 }
