@@ -20,5 +20,5 @@
 
 <p>Screenshot :</p>
 <div align="center">
-    <img src="assets/img/Screenshot.png" alt="Add Todo Page Image">
+    <img src="assets/images/Screenshot.png" alt="Add Todo Page Image">
 </div>
